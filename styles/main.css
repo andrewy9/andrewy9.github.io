@@ -1,0 +1,112 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 992px) {
+    .blogs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    }
+  }
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+
+body {
+    background: url(../images/background-image.jpg) no-repeat center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0px;
+    padding:0px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+}
+
+.blogs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.introduction {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2em;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 6.5em;
+}
+
+img {
+    width: 30em;
+    height: 20em;
+    margin: 20px;
+
+}
+
+.featured {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
