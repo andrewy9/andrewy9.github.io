@@ -4,6 +4,10 @@ body {
     font-family: 'Roboto Slab', serif;
 }
 
+a {
+    text-decoration: none;
+} 
+
 .background {
     padding: 0.7em;
     padding-top: 69.68px;
@@ -29,3 +33,4 @@ img {
     text-align: center;
     font-size: 1em;
 }
+
