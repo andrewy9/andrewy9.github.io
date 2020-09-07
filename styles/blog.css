@@ -1,0 +1,31 @@
+html { margin-left: calc(100vw - 100%); }
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+.background {
+    padding: 0.7em;
+    padding-top: 69.68px;
+    margin: 0em 7%;
+    background: rgba(245,245,220, 0.65);
+}
+
+.page_title {
+    margin:0px;
+}
+
+.figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+img {
+    margin: 1em;
+}
+
+.figure p {
+    text-align: center;
+    font-size: 1em;
+}
