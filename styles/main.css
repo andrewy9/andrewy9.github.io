@@ -26,6 +26,12 @@ body {
     font-size: 3.25em;
 }
 
+#date {
+    font-size: 0.7em;
+    text-align: center;
+    position: relative;
+    bottom: 3em;
+}
 
 .blogs {
     display: flex;
