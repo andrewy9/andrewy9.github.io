@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+    <p>
+        CSS (Cascading Style Sheet) is a great tool to use for not just adding styles to your boring old html files, but also for positioning your content in such a way that they are easier to engage with and navigate around. Unfortunately with CSS, you cannot simply drag and drop elements on the HTML as you see fit, but you can apply different sets of rules to help the contents of the page organise themselves in the way you want to see. There are many sets of those rules, and the one we will be visiting this time is the <strong>relative</strong> “ CSS Positioning”.
+    </p>
+    <h2>Before we jump onto the boat…</h2>
+    <p>>
+        Step 0 we should take before going into CSS positioning is to look at how the elements on a webpage are presented. All elements are blocks of rectangular blocks with its own pixels of borders and margins.
+    </p>
+    <!-- Img1, 2, 3, 4 -->
+    <p>
+        There are elements such as `div` that are `display: block`l by default (meaning don’t jump onto the same row as the other elements), and there are elements such as `span` that are `display: inline` by default and will sit horizontally next to other elements.
+    </p>
+    <!-- Img 5,6 -->
+    <p>
+         Now we understand each element has their own boxes of space that they fill up on a webpage, now let’s have a  look at their positioning.
+    </p>
+    <h2>Static Positioning</h2>
+    <p>
+        The static positioning is the default positioning for the elements. It is sometimes used to change the element’s positioning back to default when affected by the outside elements.
+    </p>
+    <!-- Img 1, 2 -->
+    <h2>Relative Positioning</h2>
+    <p>
+        What if I move this element 10px to the right, <strong>relative</strong> to where it is now? Relative positioning answers that question for you on the webpage, allowing you to move the element in relation to where it would be if it was `position: static`.
+    </p>
+    <p>
+        Another effect the relative positioning will have on its element is that it will always appear on top of another static positioned element if moved over. You can also set it so that it appears on top or under other elements with different positionings using the z-index (more on that later).
+    </p>
+
+</body>
+</html>
