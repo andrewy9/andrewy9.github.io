@@ -5,34 +5,23 @@
     box-sizing: border-box;
 }
 
-/* @media screen and (max-width: 992px) {
-    .blogs {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    }
-  } */
-
-
 body {
     background: url(../images/background-image.jpg) no-repeat center center fixed;
     background-repeat: no-repeat;
     background-size: cover;
     margin:0px;
     padding:0px;
-
-    font-family: 'Nunito', sans-serif;
-    font-size: 2em;
 }
 
 .container {
     text-align: center; 
     margin: 0px;
     padding: 0px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2em;
 }
 
-.title {
+.page_title {
     font-family: 'Lobster', cursive;
     font-size: 3.25em;
 }
@@ -47,11 +36,12 @@ body {
 
 .blogs p {
     margin:0px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5em;
 }
 
-img {
-    width: 15em;
-    height: 10em;
+.entries {
+    height: 20em;
+    width: 30em;
     margin: 20px;
-
 }
