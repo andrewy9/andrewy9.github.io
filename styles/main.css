@@ -13,6 +13,10 @@ body {
     padding:0px;
 }
 
+a {
+    color: inherit; 
+} 
+
 .container {
     text-align: center; 
     margin: 0px;
