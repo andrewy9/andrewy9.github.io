@@ -1,4 +1,4 @@
-html { margin-left: calc(100vw - 100%); }
+/* html { margin-left: calc(100vw - 100%); } */
 
 body {
     font-family: 'Roboto Slab', serif;
@@ -15,7 +15,7 @@ a {
     background: rgba(245,245,245, 0.65);
 }
 
-.page_title {
+#page_title {
     margin:0px;
 }
 
@@ -33,4 +33,3 @@ img {
     text-align: center;
     font-size: 1em;
 }
-

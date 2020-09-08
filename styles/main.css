@@ -11,6 +11,7 @@ body {
     background-size: cover;
     margin:0px;
     padding:0px;
+    font-family: 'Nunito', sans-serif;
 }
 
 a {
@@ -21,11 +22,10 @@ a {
     text-align: center; 
     margin: 0px;
     padding: 0px;
-    font-family: 'Nunito', sans-serif;
     font-size: 2em;
 }
 
-.page_title {
+#page_title {
     font-family: 'Lobster', cursive;
     font-size: 3.25em;
 }
@@ -54,4 +54,19 @@ a {
     height: 20em;
     width: 30em;
     margin: 20px;
+}
+
+.blog_nav {
+    display:flex;
+    justify-content: center;
+}
+
+.blog_nav h3 {
+    display:inline-block;
+    margin: 1.5em;
+    text-align: center;
+}
+
+a:hover {
+    text-shadow: 2px 2px 5px grey;
 }
