@@ -19,7 +19,7 @@
             <a href="../index.html">
                 <h1 id="page_title" name="page_title">Andrew's Blog</h1>
             </a>
-            <h2>Java Script</h2>
+            <h2>JavaScript</h2>
         </div>
         <div>
             <p id="date">
@@ -62,27 +62,7 @@
                     <li><span class="egComment">// the varaible x now holds the string value "Coding is fun". </span></li>
                 </ul>
             </div>
-            <p>
-                Functions are similar to variable, but they hold an <strong>"instruction on what to do"</strong> rather than a simple data value. For example:
-            </p>
-            <div class="egCode">
-                <ul class="noBullet">
-                    <li><span class="egFunc">function</span> barrelRoll (plane) {spin the plane 360 degrees while flight}</li>
-                    <li><span class="egFunc">function</span> multiply (a, b) {return a * b}</li>
-                </ul>
-            </div>
-            <p>
-                Sometime the variable themselves can hold a function as their value. For example:
-            </p>
-            <div class="egCode">
-                <ul class="noBullet">
-                    <li><span class="egVar">var</span> z = mulitply()</li> 
-                    <li><span class="egVar">var</span> k = <span style="color: brown;">function (a)</span> {a*3}</li>
-                </ul>
-            </div>
-            <p>
-                When the browser comes accross a variable or a function invocation, it will jump back to read the reference the varaible and functions that it was already declared, then come back to read the script as normal.
-            </p> -->
+           -->
             <p>
                 Quite often, programers will need to maniuplate the direction of the flow. In a situation when a decision needs to be made for one outcome or another, we can use the <span class="eg">conditionals</span> such as the <span class="eg">if</span> statement. We can use pseudo-code to represent a situation where we can use an <span class="eg">if</span> statement, such as when when comming accross a trafic light:
             </p>
@@ -121,9 +101,119 @@
                 </div>
             </div>
             <p>
-                We can interact with DOM as if you were to interact with different elements within the DOM using Query Selectors, referencing them via tags, IDs or classes.
+                We can interact with DOM as if we were to interact with different elements within the DOM using Query Selectors, referencing them via tags, IDs or classes.
             </p>
+            <h2>
+                Array & Objects
+            </h2>
+            <p>
+                Arrays in JavaScript are varaibles that cotain a list of values, for example, like a list of things to bring to a picnic. For example:
+            </p>
+            <div class ="egCode ">
+                <ul class ="noBullet">
+                    <li> <span class="egVar">var</span> picnicList = [</li>
+                    <li>'Picnic Basket', <span class="egComment">//0th index </span></li>
+                    <li>'Water Bottle',<span class="egComment">//1st index</span</li>
+                    <li>'Blanket',<span class="egComment">//2nd index</span</li>
+                    <li>'Parasol' ]<span class="egComment">//3rd index</span</li>
+                </ul>
+            </div>
+            <p>
+                Above example shows the array <strong>picnicList</strong> with 4 different data elements within the array. Each of those element can be accessed by calling upon their <span class="eg">indices</span>. Index for any arrays start with 0, not 1. Which means the first item 'Picnic Basket' will have index of 0, and the second item in the array will have index of 1.
+            </p>
+            <p>
+                Each of the element can be accessed by naming the array name (e.g. picnicList), followed by the index number in a squared bracket. For example:
+            </p>
+            <div class ="egCode ">
+                <ul class= "noBullet">
+                    <li> picnicList[0] <span class="egComment">//will retrieve Picnic Basket </span></li>
+                    <li>picnicList[1] <span class="egComment">//will retrieve Water Bottle </span></li>
+                    <li>picnicList[2] <span class="egComment">//will retrieve Blanket </span></li>
+                    <li>picnicList[3] <span class="egComment">//will retrieve parasol </span></li>
+                </ul>
+            </div>
+            <p>
+                Objects in JavaScripts are similar to "things". These objects or "things" can have different "characteristics" called <span class="eg">properties</span>. For example, an object can be a <strong>"car"</strong> with properties of blue color, sedan form-factor, make of Honda, model of Civic etc. Each of the object's characteristics consists of <span class="eg">key</span> and <span class="eg">value</span>. In code, they can be described as follows:
+            </p>
+            <div class ="egCode ">
+                <ul class= "noBullet">
+                    <li> <span class="egVar">var</span> car = {
+                    <li>color: 'Blue', </span> </li> 
+                    <li>formFactor: 'Sedan', </span></li>
+                    <li>make: 'Honda', </span></li>
+                    <li>model: 'Civic', </span></li>
+                    <li>previousOwners: ['John', 'Kate','Samuel', 'Kim']</li>
+                </ul>
+            </div>
+            <p>
+                For objects, each of the properties and it's values can be acessed by the following naming the object name (e.g. Car) followed by a dot and the property key. For example:
+            </p>
+            <div class ="egCode ">
+                <ul class= "noBullet">
+                    <li>car.color <span class="egComment">//will retrieve 'Blue'.</span></li>
+                    <li>car.formFactor <span class="egComment">//will retrieve 'Sedan'.</span></li>
+                    <li>car.previousOwners <span class="egComment">//will retrieve ['John', 'Kate','Samuel', 'Kim'].</span></li>
+                    <li>car.previousOwners[1] <span class="egComment">//will retrieve 'Kate'.</span></li>
+                </ul>
+            </div>
+            <p>
+                Same can be achieved by using the square bracket notations and quotation marks instead of a dot. Eg:
+            </p>
+            <div class ="egCode ">
+                <ul class= "noBullet">
+                    <li>car['color'] <span class="egComment">//will retrieve 'Blue'.</span></li>
+                    <li>car['previousOwners'][1] <span class="egComment">//will retrieve 'Kate'.</span></li>
+                </ul>
+            </div>
+            <p>
+                From the above examples you can also see that you can also nest an array within an Object. Each of the elements in the "Car" objects can also be referenced by using inicies, just as you would on a any normal array.
+            </p>
+            <h2>
+                Functions
+            </h2>
+            <p>
+                Functions are similar to variable, but they hold an <strong>"instruction on what to do"</strong> rather than a simple data value. For example:
+            </p>
+            <div class="egCode">
+                <ul class="noBullet">
+                    <li><span class="egFunc">function</span> barrelRoll (plane) {spin the plane 360 degrees while flight}</li>
+                    <li><span class="egFunc">function</span> multiply (a, b) {return a * b}</li>
+                </ul>
+            </div>
+            <p>
+                Variable themselves can hold a function as their value. For example:
+            </p>
+            <div class="egCode">
+                <ul class="noBullet">
+                    <li><span class="egVar">var</span> z = mulitply()</li> 
+                    <li><span class="egVar">var</span> k = <span style="color: brown;">function (a)</span> {a*3}</li>
+                </ul>
+            </div>
+            <p>
+                Declaring a function by itself doesn't do anything, just as how declaring variable itself doesn't do anything either. To call a function, you can <strong>invoke</strong> by naming the function, followed by self closing brackets. For example:
+            </p>
+
         </div>
+        <div class="egCode">
+            <ul class="noBullet">
+                <li><span class="egFunc">function</span> sum (a,b) {return a + b} <span class="egComment">//does nothing by itself.</span> </li> 
+                <li></li>
+                <li> sum(1,2) <span class="egComment">//will return answer to 1 + 2, which is 3'.</span></li>
+            </ul>
+        </div>
+        <p>
+            Just like variables, functions can store complicated operations and computations, and easily be called upon by its name without having to write down all over again. It allows for easier and cleaner codes with less room for bugs or mistakes.
+        </p>
+
+        <span class="blog_nav">
+            <a href="../index.html">
+              <h3>Home</h3>
+            </a>
+            <a href="#page_title">
+              <h3>Go to top</h3>
+            </a>
+          </span>
+          
     </div>
 </body>
 </html>
