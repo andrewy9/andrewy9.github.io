@@ -33,3 +33,33 @@ img {
     text-align: center;
     font-size: 1em;
 }
+
+.egCode {
+    font-family: Consolas, 'Courier New', monospace;
+}
+
+.eg {
+    font-family: Consolas, 'Courier New', monospace;
+    color: palevioletred;
+}
+
+.egVar {
+    color: blue;
+}
+
+.egFunc {
+    color: brown;
+}
+
+.egComment {
+    color: rgb(80, 78, 78);
+}
+
+.noBullet {
+    list-style: none;
+}
+
+#DOM {
+    height: 40em;
+    width: 40em;
+}

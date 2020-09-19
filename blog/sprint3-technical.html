@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog: Technical #2</title>
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <!-- CSS links -->
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    <link rel="stylesheet" type="text/css" href="../styles/blog.css">
+</head>
+
+<body>
+    <div class="background">
+        <div class="container">
+            <a href="../index.html">
+                <h1 id="page_title" name="page_title">Andrew's Blog</h1>
+            </a>
+            <h2>Java Script</h2>
+        </div>
+        <div>
+            <p id="date">
+                Upload Date: 19th September 2020
+            </p>
+        </div>
+        <div>
+            <h2>
+                The Browser Trio: HTML, CSS and JS
+            </h2>
+            <p>
+                So far we have discussed two of the three main languages that formulate the modern day web experience. They were <strong>HTML (Hyper Text Mark-up Language)</strong> and <strong>CSS (Cascading Style Sheet</strong>. The final of the three the langeuage that is being introduced in this blog is <strong> JavaScript (JS)</strong>.
+            </p>
+            <p>
+                If the functions of each of those languages for websites were to be described in the simpliest form:
+            </p>
+            <ul class="noStyle">
+                <li><strong>HTML</strong> deals with what you <strong>READ</strong>.</li>
+                <li><strong>CSS</strong> deals with what you <strong>SEE</strong>.</li>
+                <li><strong>JavaScript</strong> deals with what you <strong>DO</strong>.</li>
+            </ul>
+            <p>
+                To add further details about <strong>Java Script</strong>, it is a language that helps the webpage become more interactive for the users. It allows actions/inactions (such as clicks or key-presses) to trigger certain events such as change in website presentation, execution of a calculation or an appearance of a new menu.
+            </p>
+            <h2>
+                Control Flow
+            </h2>
+            <p>
+                Just as we read a book from left to right, from top to bottom, there is a direction and an order in which the browser reads the JavaScript code. This is called the <strong>Control Flow</strong>. While it seems it should be a straight forward process, after all we just compared it to simply reading a book, the fact that JavaScript is designed to be interactive makes it a little more complicated process.
+            </p>
+                As a whole, the JavaScript's <strong>Control Flow</strong> will dictate that the codes should be read line-by-line, from top to bottom. Again, just as if reading a book. However when it comes to functions or number operations, it reads the codes very close to that of a BEDMAS. Meaning it reads what's in the bracket first, then multiplication/division and then addition/subtraction.
+            <!-- <p>
+                Variable in JavaScript is a short-hand that holds a data value. It is short-hand for something that coders don't want to keep repeat writing down. For example the phrase "As Soon As Possible" is something we use often enough but tedious to write or type every single time. So we <strong>declare</strong> that the short-hand for that phrase is "ASAP" so that in the future if we see the short-hand, we know it means ASAP. Similarly, we can <strong>declare</strong> that the short-hand for "2 x 2 x 2 x 2" is "fourTwo" by using a variable. For example:
+            </p>
+            <div class="egCode">
+                <ul class="noBullet">
+                    <li><span class="egVar">var</span> x = 2*2*2*2</li>
+                    <li><span class="egComment">// the varaible x now holds the number value 16.</span></li>
+                    <li><span class="egVar"">var</span> y = "Coding is fun"</li>
+                    <li><span class="egComment">// the varaible x now holds the string value "Coding is fun". </span></li>
+                </ul>
+            </div>
+            <p>
+                Functions are similar to variable, but they hold an <strong>"instruction on what to do"</strong> rather than a simple data value. For example:
+            </p>
+            <div class="egCode">
+                <ul class="noBullet">
+                    <li><span class="egFunc">function</span> barrelRoll (plane) {spin the plane 360 degrees while flight}</li>
+                    <li><span class="egFunc">function</span> multiply (a, b) {return a * b}</li>
+                </ul>
+            </div>
+            <p>
+                Sometime the variable themselves can hold a function as their value. For example:
+            </p>
+            <div class="egCode">
+                <ul class="noBullet">
+                    <li><span class="egVar">var</span> z = mulitply()</li> 
+                    <li><span class="egVar">var</span> k = <span style="color: brown;">function (a)</span> {a*3}</li>
+                </ul>
+            </div>
+            <p>
+                When the browser comes accross a variable or a function invocation, it will jump back to read the reference the varaible and functions that it was already declared, then come back to read the script as normal.
+            </p> -->
+            <p>
+                Quite often, programers will need to maniuplate the direction of the flow. In a situation when a decision needs to be made for one outcome or another, we can use the <span class="eg">conditionals</span> such as the <span class="eg">if</span> statement. We can use pseudo-code to represent a situation where we can use an <span class="eg">if</span> statement, such as when when comming accross a trafic light:
+            </p>
+            <div class="egCode">
+                <ul class="noBullet">
+                    <li><span class="egVar">if</span> (trafic light is red) {</li>
+                    <li>    stopCar;</li>
+                    <li>} else if (trafic light yellow) {</li>
+                    <li>    slow down;</li>
+                    <li>} else {</li>
+                    <li> drive on; } </li>
+                </ul>
+            </div>
+            <p>
+                In other occasions, we may want to repeat something a multiple times until a certain condition is met using a <span class="eg">loop</span>. For example, we can use cooking a steak as an example of how a <span class="eg">while</span> loop can be applied.
+            </p>
+            <div class="egCode">
+                <ul class="noBullet">
+                    <li><span class="egVar">while</span> (steak == raw) {</li>
+                    <li>    continue cooking;</li>
+                </ul>
+            </div>
+            <h2>
+                Document Object Model
+            </h2>
+            <p>
+                Or DOM for short, it is a JavaScript <strong>representation</strong> of a browser document, namely HTML. The browser creates the DOM so that JavaScript can refer to the HTML and interact with it, without actually changing the content of the HTML itsself.
+            </p>
+            <p>
+                DOM is represented as what is often called a "DOM tree" (see below). Just as JavaScript can interact with <strong>"Objects"</strong> and assign properties and values, each of the elements/tags in an HTML document is represented as objects that JavaScript can change or add value to. These objects are modeled into a hierarchical model that reflect the parent-child relationship of different elements in the HTML document.
+            </p>
+            <div class="figure">
+                <div>
+                    <img id="DOM" src="../images/Sprint3/figure_1.png" alt="Document Object Model.">
+                    <p>Document Object Model</p>
+                </div>
+            </div>
+            <p>
+                We can interact with DOM as if you were to interact with different elements within the DOM using Query Selectors, referencing them via tags, IDs or classes.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
