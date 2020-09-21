@@ -8,6 +8,10 @@ a {
     text-decoration: none;
 } 
 
+p a {
+    color:blue
+}
+
 .background {
     padding: 0.7em;
     padding-top: 69.68px;
@@ -62,4 +66,12 @@ img {
 #DOM {
     height: 40em;
     width: 40em;
+}
+
+#mindset {
+    max-width: 40em;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
