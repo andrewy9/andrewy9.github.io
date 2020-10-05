@@ -1,182 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog: Technical #2</title>
     <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
     <!-- CSS links -->
-    <link rel="stylesheet" type="text/css" href="../styles/main.css">
-    <link rel="stylesheet" type="text/css" href="../styles/blog.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="../styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/blog.css" />
+  </head>
 
-<body>
+  <body>
     <div class="background">
-        <div class="container">
-            <a href="../index.html">
-                <h1 id="page_title" name="page_title">Andrew's Blog</h1>
-            </a>
-            <h2> CSS Positioning</h2>
+      <div class="container">
+        <a href="../index.html">
+          <h1 id="page_title" name="page_title">Andrew's Blog</h1>
+        </a>
+        <h2>CSS Positioning</h2>
+      </div>
+      <div>
+        <p id="date">Upload Date: 7th September 2020</p>
+      </div>
+      <p>
+        CSS (Cascading Style Sheet) is a great tool to use for not just adding
+        styles to your boring old html, but also for positioning your contents
+        in such a way that they are easier to engage with and navigate around.
+        Unfortunately with CSS, you cannot simply drag and drop elements on the
+        HTML as you see fit. However, you can apply different sets of rules to
+        help the contents of the page organise themselves to your liking. There
+        are many sets of those rules and the one we will be visiting this time
+        is the <strong>“CSS Positioning”</strong>.
+      </p>
+
+      <!-- Prelude -->
+      <h2>Before we jump the boat…</h2>
+      <p>
+        Step 0 we should take before going into CSS positioning is to look at
+        how the elements on a webpage are presented. All elements are blocks of
+        rectangular blocks with its own pixels of borders and margins.
+      </p>
+      <div class="figure">
+        <div>
+          <img src="../images/figures/figure_1.png" alt="figure 1, box model" />
+          <p>Figure 1</p>
+        </div>
+      </div>
+      <p>
+        There are elements such as <strong>div</strong> that are
+        <strong>display: block</strong> by default (meaning they don’t jump next
+        to other elements and share the row), and there are elements such as
+        <strong>span</strong> that are <strong>display: inline</strong> by
+        default and will sit horizontally next to other elements.
+      </p>
+      <div class="figure">
+        <div>
+          <img
+            src="../images/figures/figure_2.png"
+            alt="figure 2, box div and span code html."
+          />
+          <p>Figure 2</p>
         </div>
         <div>
-            <p id="date">
-                Upload Date: 7th September 2020
-            </p>
+          <img
+            src="../images/figures/figure_3.png"
+            alt="figure 3, div and span css illustration."
+          />
+          <p>Figure 3</p>
         </div>
-        <p>
-            CSS (Cascading Style Sheet) is a great tool to use for not just adding styles to your boring old html, but also for positioning your contents in such a way that they are easier to engage with and navigate around. Unfortunately with CSS, you cannot simply drag and drop elements on the HTML as you see fit. However, you can apply different sets of rules to help the contents of the page organise themselves to your liking. There are many sets of those rules and the one we will be visiting this time is the <strong>“CSS Positioning”</strong>.
-        </p>
-
-        <!-- Prelude -->
-        <h2>Before we jump the boat…</h2>
-        <p>
-            Step 0 we should take before going into CSS positioning is to look at how the elements on a webpage are presented. All elements are blocks of rectangular blocks with its own pixels of borders and margins.
-        </p>
-        <div class="figure">
-            <div>
-                <img src="../images/figures/figure_1.png" alt="figure 1, box model">
-                <p>Figure 1</p>
-            </div>
+        <div>
+          <img
+            src="../images/figures/figure_4.png"
+            alt="figure 4, div and span web browser illustration."
+          />
+          <p>Figure 4</p>
         </div>
-            <p>
-                There are elements such as <strong>div</strong> that are <strong>display: block</strong> by default (meaning they don’t jump next to other elements and share the row), and there are elements such as <strong>span</strong> that are <strong>display: inline</strong> by default and will sit horizontally next to other elements.
-            </p>
-        <div class="figure">
-            <div>
-                <img src="../images/figures/figure_2.png" alt="figure 2, box div and span code html.">
-                <p>Figure 2</p>
-            </div>
-            <div>
-                <img src="../images/figures/figure_3.png" alt="figure 3, div and span css illustration.">
-                <p>Figure 3</p>
-            </div>
-            <div>
-                <img src="../images/figures/figure_4.png" alt="figure 4, div and span web browser illustration.">
-                <p>Figure 4</p>
-            </div>
+      </div>
+      <p>
+        Now we understand that each element has their own boxes of space that
+        they fill up on a webpage, now let’s have a look at their types of
+        positioning.
+      </p>
+
+      <!-- Static Positioning -->
+      <h2>Static Positioning</h2>
+      <p>
+        The static positioning is the default positioning for the elements. It
+        is sometimes used to change the element’s positioning back to default
+        when it's affected by the outside elements. The html syntax for
+        assigning a static position is <strong>position: static</strong>
+      </p>
+
+      <!-- Relative positioning -->
+      <h2>Relative Positioning</h2>
+      <p>
+        What if I want to move this element 10px to the right from where it is
+        now? Relative positioning answers that question for you. It allows you
+        to move the element in relation to where it would be if it was
+        <strong>position: static </strong>, which should be the default position
+        from the start.
+      </p>
+      <p>
+        Figure 5 shows "Div one" element with
+        <strong>position: relative</strong>. Figure 6 shows "Div one" element
+        with <strong>position: relative</strong> with
+        <strong>left: 15px</strong>.
+      </p>
+
+      <div class="figure">
+        <div>
+          <img
+            src="../images/figures/figure_5.png"
+            alt="figure 5, relative positioning."
+          />
+          <p>Figure 5</p>
         </div>
-        <p>
-            Now we understand that each element has their own boxes of space that they fill up on a webpage, now let’s have a  look at their types of positioning.
-        </p>
-
-        <!-- Static Positioning -->
-        <h2>Static Positioning</h2>
-        <p>
-            The static positioning is the default positioning for the elements. It is sometimes used to change the element’s positioning back to default when it's affected by the outside elements. The html syntax for assigning a static position is <strong>position: static</strong>
-        </p>
-
-        <!-- Relative positioning -->
-        <h2>Relative Positioning</h2>
-        <p>
-            What if I want to move this element 10px to the right from where it is now? Relative positioning answers that question for you. It allows you to move the element in relation to where it would be if it was <strong>position: static </strong>, which should be the default position from the start.
-        </p>
-        <p>
-            Figure 5 shows "Div one" element with <strong>position: relative</strong>. Figure 6 shows "Div one" element with <strong>position: relative</strong> with <strong>left: 15px</strong>.
-        </p>
-
-        <div class="figure">
-            <div>
-                <img src="../images/figures/figure_5.png" alt="figure 5, relative positioning.">
-                <p>Figure 5</p>
-            </div>
-            <div>
-                <img src="../images/figures/figure_6.png" alt="figure 6, relative positioning from the left.">
-                <p>Figure 6</p>
-            </div>
+        <div>
+          <img
+            src="../images/figures/figure_6.png"
+            alt="figure 6, relative positioning from the left."
+          />
+          <p>Figure 6</p>
         </div>
+      </div>
 
-        <p>
-            Another effect the relative positioning will have on its element is that it will always appear on top of another static positioned element if moved over. 
-        </p>
+      <p>
+        Another effect the relative positioning will have on its element is that
+        it will always appear on top of another static positioned element if
+        moved over.
+      </p>
 
-        <p>
-            You can also set it so that it appears on top or under other elements with different positionings using the z-index. Assigning a higher z-index to an element that does not have a static position will allow it to be positioned higher than the those with lower assigned z-index.
-        </p>
+      <p>
+        You can also set it so that it appears on top or under other elements
+        with different positionings using the z-index. Assigning a higher
+        z-index to an element that does not have a static position will allow it
+        to be positioned higher than the those with lower assigned z-index.
+      </p>
 
-        <p>
-            Figure 7 shows "Div one" with <strong>position: relative</strong> with <strong>top: 15px</strong>. You can see the <strong>relatively positioned</strong> "Div One" allows it to position itself on top of the "Dive two" with <strong>static position</strong>
-        </p>
+      <p>
+        Figure 7 shows "Div one" with <strong>position: relative</strong> with
+        <strong>top: 15px</strong>. You can see the
+        <strong>relatively positioned</strong> "Div One" allows it to position
+        itself on top of the "Dive two" with <strong>static position</strong>
+      </p>
 
-        <div class="figure">
-            <div>
-                <img src="../images/figures/figure_7.png" alt="figure 7, relative positioning from the top.">
-                <p>Figure 7</p>
-            </div>
+      <div class="figure">
+        <div>
+          <img
+            src="../images/figures/figure_7.png"
+            alt="figure 7, relative positioning from the top."
+          />
+          <p>Figure 7</p>
         </div>
+      </div>
 
-        <!-- Absolute Positioning -->
-        <h2>Absolute Positioning</h2>
-        <p>
-            What if you wanted to position something, wherever you wanted, without affecting positions of other elements? Absolute positioning allows you to place an element anywhere within its parent as if it is a sticker, given that the parent element is either <strong>relatively</strong> or <strong>absolutely</strong> positioned. If there are no parent elements with absolute or relative positioning, it positions itself in relation to the html instead.
-        </p>
-        <p>
-            Figure 8 shows “Div one” with <strong>position: absolute </strong>. Notice how it is positioned on top of other elements without affecting their position.
-        </p>
-        <p>
-            Figure 9 shows <strong>absolutely positioned</strong> “Div one” with <strong>top: 15px;</strong> while the “Parent” division is relatively positioned. Notice how it is positioned 15px from the top in relation to the “parent” division without affecting any other elements.
-        </p>
-        <div class="figure">
-            <div>
-                <img src="../images/figures/figure_8.png" alt="figure 8, absolutely positioned.">
-                <p>Figure 8</p>
-            </div>
-            <div>
-                <img src="../images/figures/figure_9.png" alt="figure 9, absolutely positioned 15px from the top of the relatively positioned parent division.">
-                <p>Figure 9</p>
-            </div>
+      <!-- Absolute Positioning -->
+      <h2>Absolute Positioning</h2>
+      <p>
+        What if you wanted to position something, wherever you wanted, without
+        affecting positions of other elements? Absolute positioning allows you
+        to place an element anywhere within its parent as if it is a sticker,
+        given that the parent element is either <strong>relatively</strong> or
+        <strong>absolutely</strong> positioned. If there are no parent elements
+        with absolute or relative positioning, it positions itself in relation
+        to the html instead.
+      </p>
+      <p>
+        Figure 8 shows “Div one” with <strong>position: absolute </strong>.
+        Notice how it is positioned on top of other elements without affecting
+        their position.
+      </p>
+      <p>
+        Figure 9 shows <strong>absolutely positioned</strong> “Div one” with
+        <strong>top: 15px;</strong> while the “Parent” division is relatively
+        positioned. Notice how it is positioned 15px from the top in relation to
+        the “parent” division without affecting any other elements.
+      </p>
+      <div class="figure">
+        <div>
+          <img
+            src="../images/figures/figure_8.png"
+            alt="figure 8, absolutely positioned."
+          />
+          <p>Figure 8</p>
         </div>
-        <p>
-            Figure 10 shows <strong>absolutely positioned</strong> “Div one” with <strong>top: 15px;</strong> while the “Parent” division is neither relatively positioned or absolutely positioned. Notice how it is positioned 15px from the top in relation to the html without affecting any other elements.
-        </p>
-        <div class="figure">
-            <div>
-                <img src="../images/figures/figure_10.png" alt="figure 10, absolutely positioned 15px from the top of the html.">
-                <p>Figure 10</p>
-            </div>
+        <div>
+          <img
+            src="../images/figures/figure_9.png"
+            alt="figure 9, absolutely positioned 15px from the top of the relatively positioned parent division."
+          />
+          <p>Figure 9</p>
         </div>
-
-        <!-- Fixed Positioning -->
-        <h2>Fixed Positioning</h2>
-
-        <p>
-            Very similar to absolute positioning, except that it is always positioned in relation to the viewport. Because the viewport doesn’t move or change when the window is scrolled, it also means the <strong>position:fixed</strong> allows elements to not move when the window is scrolled. This characteristic makes it useful for positioning nav bars.
-        </p>
-
-        <p>
-            Figure 11 shows “Div one” with a <strong>fixed position</strong> with <strong>top: 0px</strong>. The “Parent” element is positioned relatively but unlike absolute positioning, it is fixed only to the viewport.
-        </p>
-        <p>
-            Figure 12 shows how scrolling the window does not change the position of the “Div one” element while it is in <strong>fixed position</strong>.
-        </p>
-
-        <div class="figure">
-            <div>
-                <img src="../images/figures/figure_11.png" alt="figure 11, fixed positioned element always positioned in relation to the viewport.">
-                <p>Figure 11</p>
-            </div>
-            <div>
-                <img src="../images/figures/figure_12.png" alt="figure 12, fixed positioned element does not change position even when the window is scrolled.">
-                <p>Figure 12</p>
-            </div>
+      </div>
+      <p>
+        Figure 10 shows <strong>absolutely positioned</strong> “Div one” with
+        <strong>top: 15px;</strong> while the “Parent” division is neither
+        relatively positioned or absolutely positioned. Notice how it is
+        positioned 15px from the top in relation to the html without affecting
+        any other elements.
+      </p>
+      <div class="figure">
+        <div>
+          <img
+            src="../images/figures/figure_10.png"
+            alt="figure 10, absolutely positioned 15px from the top of the html."
+          />
+          <p>Figure 10</p>
         </div>
+      </div>
 
-        <!-- Sticky Positioning -->
-        <h2>Sticky Positioning</h2>
-        <p>
-            <strong>Position: sticky</strong> is like a fixed position where the element is placed like a static positioned element until it has been scrolled past. Given that the parent element has extra room, the sticky element will behave as a fixed positioned element.
-        </p>
+      <!-- Fixed Positioning -->
+      <h2>Fixed Positioning</h2>
 
-        <span class="blog_nav">
-            <a href="../index.html">
-              <h3>Home</h3>
-            </a>
-            <a href="#page_title">
-              <h3>Go to top</h3>
-            </a>
-        </span>
+      <p>
+        Very similar to absolute positioning, except that it is always
+        positioned in relation to the viewport. Because the viewport doesn’t
+        move or change when the window is scrolled, it also means the
+        <strong>position:fixed</strong> allows elements to not move when the
+        window is scrolled. This characteristic makes it useful for positioning
+        nav bars.
+      </p>
+
+      <p>
+        Figure 11 shows “Div one” with a <strong>fixed position</strong> with
+        <strong>top: 0px</strong>. The “Parent” element is positioned relatively
+        but unlike absolute positioning, it is fixed only to the viewport.
+      </p>
+      <p>
+        Figure 12 shows how scrolling the window does not change the position of
+        the “Div one” element while it is in <strong>fixed position</strong>.
+      </p>
+
+      <div class="figure">
+        <div>
+          <img
+            src="../images/figures/figure_11.png"
+            alt="figure 11, fixed positioned element always positioned in relation to the viewport."
+          />
+          <p>Figure 11</p>
+        </div>
+        <div>
+          <img
+            src="../images/figures/figure_12.png"
+            alt="figure 12, fixed positioned element does not change position even when the window is scrolled."
+          />
+          <p>Figure 12</p>
+        </div>
+      </div>
+
+      <!-- Sticky Positioning -->
+      <h2>Sticky Positioning</h2>
+      <p>
+        <strong>Position: sticky</strong> is like a fixed position where the
+        element is placed like a static positioned element until it has been
+        scrolled past. Given that the parent element has extra room, the sticky
+        element will behave as a fixed positioned element.
+      </p>
+
+      <span class="blog_nav">
+        <a href="../index.html">
+          <h3>Home</h3>
+        </a>
+        <a href="#page_title">
+          <h3>Go to top</h3>
+        </a>
+      </span>
     </div>
-</body>
+  </body>
 </html>
