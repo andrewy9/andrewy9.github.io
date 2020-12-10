@@ -5,6 +5,32 @@
     box-sizing: border-box;
 }
 
+@media only screen and (max-width: 320px) {
+  .entries {
+    height: 10em;
+    width: 15em;
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .entries {
+    height: 10em;
+    width: 15em;
+    margin: 10px;
+  }
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .entries {
+    height: 20em;
+    width: 30em;
+    margin: 10px;
+  }
+}
+
+
 body {
     background: url(../images/background-image.jpg) no-repeat center center fixed;
     background-repeat: no-repeat;
